@@ -25,7 +25,9 @@ class GalleryScreen extends StatelessWidget {
               (index) => Card(
                 child: SizedBox(
                   height: 200,
-                  child: Image.network(imageUrls![index]),
+                  child: FadeInImage(
+                    placeholder: const AssetImage('images/winnie-puch.gif') ,
+                    image: NetworkImage(imageUrls![index])),
                 ),
               ),
             ),

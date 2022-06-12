@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:week16_animation/sections/builder_section.dart';
+import 'package:week16_animation/sections/container_section.dart';
 import 'package:week16_animation/sections/manual_section.dart';
 import 'package:week16_animation/sections/simple_section.dart';
 
@@ -29,7 +30,7 @@ class HomeScreen extends StatelessWidget {
               children: [
                 ManualSection(imageUrls: characterImages['winnie']),
                 BuilderSection(imageUrls: characterImages['piglet']),
-                SimpleSection(imageUrls: characterImages['rabbit']),
+                ContainerSection(imageUrls: characterImages['rabbit']),
                 SimpleSection(imageUrls: characterImages['eeyore']),
               ],
             ),
@@ -42,7 +43,8 @@ class HomeScreen extends StatelessWidget {
 
 Map<String, List<String>> characterImages = {
   'winnie': [
-    'https://chepetsk.ru/upload/iblock/e91/e910dc68028e4a10d6ba9d5c02febcba.jpg',
+    //'https://chepetsk.ru/upload/iblock/e91/e910dc68028e4a10d6ba9d5c02febcba.jpg',
+    'https://yt3.ggpht.com/ytc/AKedOLQSRmT2jJ1QTMID6E_3E0-N12QNujprUoQEyp8=s900-c-k-c0x00ffffff-no-rj',
     'https://i.pinimg.com/474x/6e/c1/d7/6ec1d708429bb0840ac5c9a8fedd3ef4.jpg',
     'https://upload.wikimedia.org/wikipedia/en/1/10/Winniethepooh.png',
   ],
